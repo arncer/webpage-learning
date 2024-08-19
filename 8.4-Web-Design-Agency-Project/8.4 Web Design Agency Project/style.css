@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+img{
+  float: left;
+}
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+.card{
+  width: 45%;
+  /*主要是两块区域各占45%，又因为inline-block的话，分区两块，这样无论屏幕有多大，都能保证一边一块
+  固定px的话，只能做到当前页面的存在合理
+  */
+}
+.tile-image{
+  height: 200px;
+  float:left;
+  margin-right: 50px;
+}
+@media (max-width:880px) {
+  .logo{
+    width:100px;
+  }
+  .card{
+    width: 100%;
+    /*小于680px，就直接占满，两者之间就不用分区了，直接一人上下一块*/
+  }
+  img{
+    width: 100%;
+  }
+  .left{
+    margin-bottom: 20px;
+  }
+  h1{
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+}
+div{
+  display: inline-block;
+  margin-right: 50px;
+}

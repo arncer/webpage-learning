@@ -1,0 +1,23 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+#outer-box{
+  background-color: purple;
+  /*
+  上面扩充了10px,就是用来干这个的
+  */
+}
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+.inner-box{
+  background-color: red;
+}
+.white-text{
+  color: white;
+}

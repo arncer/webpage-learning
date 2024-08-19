@@ -1,0 +1,23 @@
+/* Write your code here: */
+h1,h2{
+    color:blueviolet
+    /*并列*/
+}
+.box>p{ 
+    /*
+    because the parent box only has the done class.
+    so the function of using done equals to using the p。
+    */
+    color:firebrick;
+}
+.list li{
+    color: blue;
+    /*后代选择器*/
+}
+li.done{
+    color:seagreen;
+}
+ul p.done{
+    font-size: 0.5rem;
+    
+}
