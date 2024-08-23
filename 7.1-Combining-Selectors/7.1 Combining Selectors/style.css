@@ -4,7 +4,9 @@ h1,h2{
     /*并列*/
 }
 .box>p{ 
+
     /*
+    只包括存在的儿子
     because the parent box only has the done class.
     so the function of using done equals to using the p。
     */
@@ -12,7 +14,8 @@ h1,h2{
 }
 .list li{
     color: blue;
-    /*后代选择器*/
+    /*后代选择器,不仅包括儿子，也包括孙子，意思就是孙子有这个选择器的条件，孙子直接
+    变成需要的状态。*/
 }
 li.done{
     color:seagreen;
